@@ -1,0 +1,204 @@
+
+/* Большие Устройства, Широкие Экраны */	
+@media only screen and (max-width : 1920px)
+	.header_search__filed
+			top: 5.4em
+@media only screen and (max-width : 1680px)
+	.header
+		&-logo_link
+			margin-left: $set
+		&_search
+			margin-right: $set
+
+
+@media only screen and (max-width : 1366px)
+	/**/
+@media only screen and (max-width : 1280px)
+	.Navigation 
+		li 
+			width: 130px
+			
+	#Nav
+		padding: 0.8em 0 1em 0
+
+	.header_search__filed
+			top: 4.4em
+
+@media only screen and (max-width : 1080px)
+	.wrap-header
+		grid-template-columns: max-content 1fr 50px
+		grid-template-rows: 50px 1fr
+
+	.header
+		margin-top: 10px
+		&-logo_link
+			grid-column: 1/3
+			grid-row: 1
+			&__med,&__info
+				font-size: 37px
+			img
+				height: 30px
+
+	#Nav
+		grid-column: 1/4
+		grid-row: 2
+		padding: 0.6em 0 0.9em 0
+
+	.header_search__filed
+		top: 2.7em
+/* Medium Devices, Desktops */	
+@media only screen and (max-width : 992px)
+	/**/
+
+@media only screen and (max-width : 860px)
+	.Navigation 
+		li 
+			width: 110px
+			font-size: 13px
+
+	
+
+/* Small Devices, Tablets */	
+@media only screen and (max-width : 780px)
+	.wrap-header
+		grid-template-columns: max-content 1fr max-content
+
+	.header
+		&-logo_link
+			&__med,&__info
+				font-size: 35px
+			img
+				height: 28px
+
+	.header_search__filed
+		top: 2.8em
+
+@media only screen and (max-width : 700px)
+	.mobile-menu-button
+		display: block
+	
+	.Navigation
+		display: none
+	#Nav
+		padding: 4px
+		display: none
+
+	// .wrap-header
+	// 	justify-content: center
+
+	.header_search__filed
+		top: 3.6em
+
+	.wrap-header
+		margin: 0 5px 0 5px
+
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+/* Extra Small Devices, Phones */	
+@media only screen and (max-width : 560px)
+	.header_search__filed
+		top: 3.6em
+@media only screen and (max-width : 480px)
+	.header
+		&_search
+			margin-right: 5px
+
+	.mobile-menu-button
+		margin-top: 7px
+
+	.wrap-header
+		margin: 0
+
+	.header_search__filed
+		top: 3.2em
+@media only screen and (max-width : 350px)
+	.header_search__filed
+		top: 2.8em
+
+	.header
+		margin: 0
+		&-logo_link
+			margin-left: 5px
+			&__med,&__info
+				font-size: 33px
+			img
+				height: 26px
+
+	.mobile-menu-button
+		margin-top: 0
+		padding: 3px 0 3px 0
+		font-size: 15px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 325px)
+
+	.header
+		margin: 0
+		&_search
+			font-size: 15px
+			margin-right: 0
+		&-logo_link
+			&__med,&__info
+				font-size: 31px
+			img
+				height: 24px
+
+	.header_search__filed
+		top: 3.4em
+
+@media only screen and (max-width : 285px)
+	
+
+	.header
+		&-logo_link
+			&__med,&__info
+				font-size: 26px
+			img
+				height: 20px
+	
+@media only screen and (max-width : 235px)
+	.header
+		&-logo_link
+			&__med,&__info
+				font-size: 20px
+			img
+				height: 14px
+
+@media only screen and (max-width : 190px)
+	.header
+		&_search
+			font-size: 12px
+			padding-right: 3px
+		&-logo_link
+			&__med,&__info
+				font-size: 15px
+			img
+				height: 11px
+	.header_search__filed
+		top: 2.5em
+
+	.wrap-header
+		grid-template-rows: 30px 1fr
+/*================================================================*/
+
+@media all and (orientation: landscape)
+	/* CSS правила для устройства в альбомном режиме */
+
+@media all and (orientation: portrait) 
+	/* CSS правила для устройства в портретном режиме */

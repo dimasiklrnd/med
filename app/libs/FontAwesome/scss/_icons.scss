@@ -1,0 +1,8 @@
+
+
+.#{$fa-css-prefix}-search:before { content: $fa-var-search; }
+.#{$fa-css-prefix}-search-plus:before { content: $fa-var-search-plus; }
+.#{$fa-css-prefix}-search-minus:before { content: $fa-var-search-minus; }
+.#{$fa-css-prefix}-bars:before { content: $fa-var-bars; }
+.#{$fa-css-prefix}-fa:before,
+.#{$fa-css-prefix}-font-awesome:before { content: $fa-var-font-awesome; }

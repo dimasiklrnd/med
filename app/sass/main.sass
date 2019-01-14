@@ -1,0 +1,73 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	background: linear-gradient(0deg, rgba(64,160,177,0) 0%, rgba(64,160,177,0.39) 100%) no-repeat
+	background-size: 100% 40vh
+	background-color: #fafafa
+	// background-attachment: fixed;
+	font-size: 17px
+	min-width: 50px
+	position: relative
+	line-height: 1.5 /* был 1,65 */
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+	main
+		a 
+			text-decoration: none
+			display: inline-block
+			letter-spacing: 1px
+			transition: 0.3s ease-in-out
+			background-image: linear-gradient(to right, rgba(183,88,88,.7) 15%, rgba(183,88,88,.9) 30%, $red 50%, rgba(183,88,88,.9) 70%, rgba(183,88,88,.7) 85%), linear-gradient($accent 50%, $accent 50%) // linear-gradient($red 50%, $red50%), linear-gradient($accent 50%, $accent 50%)
+			background-position: right bottom
+			background-repeat: no-repeat
+			background-size: 0 0.1em, 100% 0.1em
+			color: #454545  //#415f8a
+			font-style: italic
+			cursor: pointer
+			padding-bottom: -0.188em
+			transition: background-size 0.5s
+			&:hover, &:focus
+				background-size: 100% 0.1em, 100% 0.1em
+				background-position: left bottom
+				// color: $red
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+//здесь пишем код
+@import "partsass/_header"	  
+@import "partsass/_mobileMenu"	  
+
+
+
+@import "media" // Always at the end
+// 
