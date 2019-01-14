@@ -57,7 +57,7 @@
 	margin-left: 13px;
 	/* margin-top: 0px; */
 	transition-delay: 80ms;
-	
+
 }
 
 .active a {
@@ -106,7 +106,7 @@ justify-self: center;
 
 
 
-/* 
+/*
 .Navigation li ul:hover li ul  {
 	display: flex;
 	flex-direction: column;
@@ -120,7 +120,7 @@ justify-self: center;
 
 
 
-/* 
+/*
 .Navigation::before{
 	top: 50px;
 	width: 1200px;
