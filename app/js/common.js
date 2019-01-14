@@ -54,14 +54,11 @@ $(function() {
 
 			});
 
-	$(window).resize(function () {
-		if ($(window).width() >= 700) {
-			$('.mobile-menu').removeClass('.mobile-menu--open');
-		}
-	});
-	// if ($(window).width() > 700) {
-	// 	$('.mobile-menu').remove('.mobile-menu');
-	// }
+	// $(window).resize(function () {
+	// 	if ($(window).width() >= 700) {
+	// 		$('.mobile-menu').removeClass('.mobile-menu--open');
+	// 	}
+	// });
 
 
 
