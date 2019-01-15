@@ -85,7 +85,7 @@ gulp.task('styles', function() {
 	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
 	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
 	.pipe(rename({ suffix: '.min', prefix : '' }))
-	.pipe(autoprefixer({ grid:true, browsers: ['>0.1%', 'last 2 versions'], cascade: false }))  //было last 15 versions
+	.pipe(autoprefixer({ /*grid:true, */browsers: ['>0.1%', 'last 2 versions'], cascade: false }))  //было last 15 versions
 	.pipe(cleancss( { level: 2 } ))/*{ 1: { specialComments: 0 }, 2: { all: true, mergeSemantically: false, removeUnusedAtRules: false, restructureRules: false } } }), ({ compatibility: 'ie9' }))*/ // был левел 1
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.stream())

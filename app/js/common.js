@@ -63,9 +63,7 @@ function screen_check(){
 		// $('#Nav', '.Navigation').css('display', 'block');
 		$('.header').after('<div class="mobile-menu">');
 		$('.top-menu').clone().appendTo('.mobile-menu');
-
 	}
-
 	else {
 		// $('.mobile-menu').css('display', 'none');
 		$('.mobile-menu').remove();

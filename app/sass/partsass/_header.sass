@@ -1,8 +1,8 @@
 .wrap-header
 	display: grid
 	grid-template-columns: max-content 1fr 50px
-	// justify-items: center  // вместо этого выравниваем каждый элемент
-	// align-items: center
+	justify-items: center  // вместо этого выравниваем каждый элемент
+	align-items: center
 	margin: 0 $set
 
 .header
@@ -10,23 +10,25 @@
 	margin: 0 auto
 	margin-top: $set
 	&-logo_link
-		align-self: center
-		justify-self: center
+		// align-self: center
+		// justify-self: center
 		margin-left: 100px
 		line-height: 0
 		text-decoration: none
 		&__med,&__info
 			font-family: $f-stamper
+			margin-right: 3px
 			font-size: 40px
 			color: #5179ae
 			font-style: italic
 		&__info
 			color: #B75858
+			margin-left: -4px
 		img
 			height: 32px
 	&_search
-		align-self: center
-		justify-self: center
+		// align-self: center
+		// justify-self: center
 		color: $dark-blue
 		font-size: 18px
 		align-self: center
