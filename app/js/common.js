@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
 	// animate
 
@@ -19,7 +19,7 @@ $(function() {
 	// 	$(this).toggleClass('header-logo_link wow fadeOutUp');
 	// 	});
 
-//Search
+	//Search
 	$('.header_search').click(function () {
 		$('.header_search__filed').stop().slideToggle();
 		$('.header_search__filed input[type=text]').focus();
@@ -42,7 +42,7 @@ $(function() {
 	});
 
 
-//************************************************** */
+	//************************************************** */
 
 	//menu-mobile
 	// if ($(window).width() < 700) {
@@ -57,33 +57,34 @@ $(function() {
 	// 	}
 	// });
 
-/********************************************************************************************* */
-function screen_check(){
-	if ($(window).width() <= 700) {
-		// $('#Nav', '.Navigation').css('display', 'block');
-		$('.header').after('<div class="mobile-menu">');
-		$('.top-menu').clone().appendTo('.mobile-menu');
+	/********************************************************************************************* */
+	function screen_check() {
+		if ($(window).width() <= 700) {
+			// $('#Nav', '.Navigation').css('display', 'block');
+			if ($('.mobile-menu').length < 1) {
+				$('.header').after('<div class="mobile-menu">');
+				$('.top-menu').clone().appendTo('.mobile-menu');
+			}
+		} else {
+			// $('.mobile-menu').css('display', 'none');
+			$('.mobile-menu').remove();
+			$('#Nav', '.Navigation').remove();
+
+		};
 	}
-	else {
-		// $('.mobile-menu').css('display', 'none');
-		$('.mobile-menu').remove();
-		$('#Nav', '.Navigation').remove();
 
-	};
-}
-
-$('.mobile-menu-button').click(function () {
-$('.mobile-menu').slideToggle();
-});
+	$('.mobile-menu-button').click(function () {
+		$('.mobile-menu').slideToggle();
+	});
 
 	screen_check();
-	$(window).on('resize', function(){
-			screen_check();
+	$(window).on('resize', function () {
+		screen_check();
 	});
-/*************************************************************************************************** */
+	/*************************************************************************************************** */
 
 
 
 
-//End
+	//End
 });
