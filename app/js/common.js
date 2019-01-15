@@ -42,7 +42,7 @@ $(function() {
 	});
 
 
-//************************************************** */
+//******************** ************** **************** */
 
 	//menu-mobile
 	if ($(window).width() < 700) {
@@ -60,7 +60,18 @@ $(function() {
 	// 	}
 	// });
 
+// 	function screen_check(){
+//     if ($(window).width() < 700) {
+//        $('.mobile-menu').style('display', 'block');
+//     } else {
+//        $('.mobile-menu').style('display', 'none');
+//     };
+// }
 
+// screen_check();
+// $(window).on('resize', function(){
+//     screen_check();
+// });
 
 //End
 });
