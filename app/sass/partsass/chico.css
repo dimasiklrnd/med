@@ -67,16 +67,16 @@
 	opacity: 0;
 }
 
-.grid-chico figure h2 {
+.grid-chico figure h3 {
 	word-spacing: -0.15em;
 	font-weight: 300;
 }
 
-.grid-chico figure h2 span {
+.grid-chico figure h3 span {
 	font-weight: 800;
 }
 
-.grid-chico figure h2,
+.grid-chico figure h3,
 .grid-chico figure p {
 	margin: 0;
 }
@@ -120,7 +120,7 @@ figure.effect-chico p {
 	transition: opacity 0.35s, transform 0.35s;
 }
 
-figure.effect-chico h2 {
+figure.effect-chico h3 {
 	padding: 20% 0 20px 0;
 }
 
