@@ -167,8 +167,9 @@ if (gulpversion == 4) {
 		gulp.watch('app/'+syntax+'/**/*.'+syntax+'', gulp.parallel('styles'));
 		gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('scripts'));
 		gulp.watch('app/part_html/**/*.html', gulp.series('assemblyhtml', 'cleanhtml', 'code'))
-		// gulp.watch('app/sass/partsass/*.css', gulp.series('styles'))
-		gulp.watch(('app/sass/partsass/*.css', 'app/libs/animate/*.scss', 'app/libs/hovereffect/*.css'), gulp.series('styles'))
+		gulp.watch('app/sass/partsass/*.css', gulp.series('styles'))
+		// gulp.watch('app/libs/hovereffect/*.css', gulp.series('styles'))
+		gulp.watch(('app/libs/animate/*.scss'), gulp.series('styles'))
 		// gulp.watch('app/manuscript_html/*.html', gulp.series('cleanhtml', 'code'))
 	});
 	gulp.task('default', gulp.series('clean', 'assemblyhtml', 'cleanhtml', gulp.parallel('watch', /*'smartgrid', */'styles', 'scripts', 'browser-sync')));
