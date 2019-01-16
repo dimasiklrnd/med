@@ -5,11 +5,11 @@
 
 .grid-chico {
 	position: relative;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	/* padding: 1em 0 4em; */
-	max-width: 100%;
-	list-style: none;
-	text-align: center;
+	/* max-width: 100%; */
+	/* list-style: none; */
+	/* text-align: center; */
 	/* z-index: 2; */
 }
 .grid-chico figure {
@@ -63,7 +63,7 @@
 	z-index: 1000;
 	text-indent: 200%;
 	white-space: nowrap;
-	font-size: 0;
+	/* font-size: 0; */
 	opacity: 0;
 }
 
