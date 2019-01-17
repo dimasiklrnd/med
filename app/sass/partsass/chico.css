@@ -104,10 +104,10 @@ figure.effect-chico figcaption {
 
 figure.effect-chico figcaption::before {
 	position: absolute;
-	top: 30px;
-	right: 30px;
-	bottom: 30px;
-	left: 30px;
+	top: 5%;
+	right: 5%;
+	bottom: 5%;
+	left: 5%;
 	border: 1px solid #fafafa;
 	border-radius: 2px;
 	content: '';
@@ -121,7 +121,7 @@ figure.effect-chico p {
 }
 
 figure.effect-chico h3 {
-	padding: 20% 0 20px 0;
+	padding: 12% 0 20px 0;
 }
 
 figure.effect-chico p {

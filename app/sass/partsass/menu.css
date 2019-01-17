@@ -99,7 +99,7 @@ text-shadow: none;
 #Nav {
 	padding: 1.3em 0 1.5em 0;
 	border-top: 1.1px, solid, transparent;
-	border-image: linear-gradient(90deg, rgba(152, 217, 255, 0.25) 0%, rgba(152, 217, 255, 0.7) 25%, rgba(152, 217, 255, 1) 50%, rgba(152, 217, 255, 0.7) 75%, rgba(152, 217, 255, 0.25) 100%);
+	border-image: linear-gradient(90deg, rgba(152, 217, 255, 0.25) 0%, rgba(113, 202, 253, 0.7) 25%, rgb(113, 202, 253) 50%, rgba(113, 202, 253, 0.7) 75%, rgba(152, 217, 255, 0.25) 100%);
 	border-bottom: 1.1px, solid, transparent;
 	border-image-slice: 1;
 	/* align-self: center;
