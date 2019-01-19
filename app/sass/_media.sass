@@ -32,13 +32,6 @@
 	.header_search__filed
 			top: 4.4em
 
-	.grid-chico
-		grid-template-columns: repeat(3, minmax(250px, 1fr))
-		grid-template-rows: auto
-		grid-template-areas: "gc1 gc2 gc3" "gc4 gc6 gc5"
-
-
-
 
 @media only screen and (max-width : 1080px)
 	.wrap-header
@@ -62,6 +55,11 @@
 
 	.header_search__filed
 		top: 2.7em
+
+	.grid-chico
+		grid-template-columns: repeat(3, minmax(280px, 1fr))
+		grid-template-rows: repeat(2, 280px)
+		grid-template-areas: "gc1 gc2 gc3" "gc4 gc6 gc5"
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
@@ -72,17 +70,20 @@
 			width: 110px
 			font-size: 13px
 
-
+	.grid-chico
+		grid-template-columns: repeat(2, minmax(280px, 1fr))
+		grid-template-rows: repeat(3, 220px)
+		grid-template-areas: "gc1 gc2" "gc3 gc4" "gc5 gc6"
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 780px)
-	.grid-chico
-		grid-template-columns: repeat(2, minmax(200px, 1fr))
-		grid-template-rows: auto
-		grid-template-areas: "gc1 gc2" "gc3 gc4" "gc5 gc6"
-		figure
-			p
-				font-size: 60.5%
+	// .grid-chico
+	// 	grid-template-columns: repeat(2, minmax(200px, 1fr))
+	// 	grid-template-rows: auto
+	// 	grid-template-areas: "gc1 gc2" "gc3 gc4" "gc5 gc6"
+	// 	figure
+	// 		p
+	// 			font-size: 60.5%
 			// h3
 				// font-size: 90%
 	.wrap-header

@@ -28,26 +28,135 @@ section
 
 
 // first section
-@import "partsass/chico.css"
+// @import "partsass/chico.css"
+
+*, *:after, *:before
+	box-sizing: border-box
+.clearfix:before, .clearfix:after
+	display: table
+	content: ''
+.clearfix:after
+	clear: both
 
 .grid-chico
+	position: relative
 	display: grid
-	grid-template-columns: repeat(4, 1fr)
-	grid-template-rows: 325px 325px
+	grid-template-columns: repeat(4, minmax(250px, 1fr))
+	grid-template-rows: 250px 250px
 	grid-gap: 2px
-	grid-template-areas: "gc1 gc1 gc2 gc3" "gc4 gc6 gc6 gc5"
+	grid-template-areas: "gc1 gc1 gc2 gc3" "gc4 gc4 gc5 gc5"
+	figure
+		border-radius: 2px
+		position: relative
+		overflow: hidden
+		margin: 0
+		background: #3085a3
+		text-align: center
+		cursor: pointer
+		z-index: 2
+		figcaption
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			color: #fafafa
+			text-transform: uppercase
+			backface-visibility: hidden
+			>a
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				z-index: 1000
+				text-indent: 200%
+				white-space: nowrap
+				opacity: 0
+			&::before, &::after
+				pointer-events: none
+		h3
+			margin: 0
+			word-spacing: -0.15em
+			font-weight: 300
+			span
+				font-weight: 800
+		p
+			letter-spacing: 1px
+			font-size: 68.5%
 	.gc1
 		grid-area: gc1
+		.img
+			background: url(../img/first_section/health/680/health.jpg) no-repeat
 	.gc2
 		grid-area: gc2
+		.img
+			background: url(../img/first_section/health/680/health.jpg) no-repeat
 	.gc3
 		grid-area: gc3
+		.img
+			background: url(../img/first_section/health/680/health.jpg) no-repeat
 	.gc4
 		grid-area: gc4
+		.img
+			background: url(../img/first_section/health/680/health.jpg) no-repeat
 	.gc5
 		grid-area: gc5
+		.img
+			background: url(../img/first_section/health/680/health.jpg) no-repeat
 	.gc6
 		grid-area: gc6
+		.img
+			background: url(../img/first_section/health/680/health.jpg) no-repeat
+
+	figure.effect-chico
+		.img
+			background-size: cover
+			position: relative
+			display: block
+			min-height: 100%
+			max-width: 100%
+			opacity: 0.7
+			transition: opacity 0.35s, transform 0.35s
+			transform: scale(1.12)
+		&:hover
+			.img
+				opacity: 0.4
+				transform: scale(1)
+
+figure.effect-chico
+	figcaption
+		padding: 3em
+		&::before
+			position: absolute
+			top: 5%
+			right: 5%
+			bottom: 5%
+			left: 5%
+			border: 1px solid #fafafa
+			border-radius: 2px
+			content: ''
+			transform: scale(1.1)
+			opacity: 0
+			transition: opacity 0.35s, transform 0.35s
+	p
+		opacity: 0
+		transition: opacity 0.35s, transform 0.35s
+		margin: 0 auto
+		max-width: 200px
+		transform: scale(1.5)
+	h3
+		padding: 8% 0 20px 0
+	&:hover
+		figcaption
+			&::before
+				opacity: 1
+				transform: scale(1)
+		p
+			opacity: 1
+			transform: scale(1)
+
+
 
 
 
