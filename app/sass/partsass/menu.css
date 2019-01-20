@@ -1,8 +1,8 @@
 .Navigation {
 	/* min-width: 100%; */
-	/* display: flex;
+	display: flex;
 	flex-wrap: wrap;
-	justify-content: center; */
+	justify-content: center;
 	max-width: fit-content;
 	margin: 0 auto;
 	height: 48px;
@@ -12,7 +12,7 @@
 
 .Navigation li {
 	height: auto;
-	width: 150px;
+	width: 170px;
 	float: left;
 	text-align: center;
 	text-transform: uppercase;
@@ -46,9 +46,9 @@
 }
 
 .Navigation li:hover ul {
-	display: block;
-	/* flex-direction: row;
-	flex-wrap: wrap; */
+	display: flex;
+	/* flex-direction: row;*/
+	flex-wrap: wrap;
 	z-index: 20;
 	position: absolute
 

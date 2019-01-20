@@ -1,15 +1,13 @@
 
 /* Большие Устройства, Широкие Экраны */
 
-
-
 @media only screen and (max-width : 2560px)
 	.header_search__filed
 			top: 5.4em
+
 @media only screen and (max-width : 1920px)
 	.header_search__filed
 			top: 5.4em
-
 
 @media only screen and (max-width : 1680px)
 	.header
@@ -18,20 +16,21 @@
 		&_search
 			margin-right: $set
 
-
 @media only screen and (max-width : 1366px)
 	/**/
 @media only screen and (max-width : 1280px)
 	.Navigation
 		li
 			width: 130px
+			ul
+				li
+					font-size: 12px
 
 	#Nav
 		padding: 0.8em 0 1em 0
 
 	.header_search__filed
 			top: 4.4em
-
 
 @media only screen and (max-width : 1080px)
 	.wrap-header
@@ -57,9 +56,12 @@
 		top: 2.7em
 
 	.grid-chico
-		grid-template-columns: repeat(3, minmax(280px, 1fr))
-		grid-template-rows: repeat(2, 280px)
-		grid-template-areas: "gc1 gc2 gc3" "gc4 gc6 gc5"
+		grid-template-columns: repeat(3, minmax(240px, 1fr))
+		grid-template-rows: repeat(2, 240px)
+		grid-template-areas: "gc1 gc1 gc3" "gc2 gc4 gc5"
+		.gc5
+			.img
+				background: url(../img/first_section/390/zog.jpg) no-repeat center
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
@@ -69,23 +71,22 @@
 		li
 			width: 110px
 			font-size: 13px
+			ul
+				li
+					font-size: 10px
 
 	.grid-chico
-		grid-template-columns: repeat(2, minmax(280px, 1fr))
-		grid-template-rows: repeat(3, 220px)
-		grid-template-areas: "gc1 gc2" "gc3 gc4" "gc5 gc6"
-
+		grid-template-columns: repeat(3, minmax(210px, 1fr))
+		grid-template-rows: repeat(2, 190px)
+		grid-template-areas: "gc1 gc1 gc3" "gc2 gc4 gc5"
+	figure.effect-chico
+		h3
+			padding: 3% 0 15px 0
+			margin: -20px 0 8px 0
+			padding: 0
 /* Small Devices, Tablets */
 @media only screen and (max-width : 780px)
-	// .grid-chico
-	// 	grid-template-columns: repeat(2, minmax(200px, 1fr))
-	// 	grid-template-rows: auto
-	// 	grid-template-areas: "gc1 gc2" "gc3 gc4" "gc5 gc6"
-	// 	figure
-	// 		p
-	// 			font-size: 60.5%
-			// h3
-				// font-size: 90%
+
 	.wrap-header
 		grid-template-columns: max-content 1fr max-content
 
@@ -99,18 +100,44 @@
 	.header_search__filed
 		top: 2.8em
 
+	.grid-chico
+		figure
+			p
+				font-size: 60.5%
+			h3
+				font-size: 95%
 @media only screen and (max-width : 700px)
 	.mobile-menu-button
 		display: block
 
 	.Navigation
 		display: none
+		position: absolute
+		z-index: 20
 	#Nav
 		padding: 4px
 		display: none
 
-	// .wrap-header
-	// 	justify-content: center
+	.grid-chico
+		grid-template-columns: repeat(2, minmax(180px, 1fr))
+		grid-template-rows: repeat(3, 160px)
+		grid-template-areas: "gc1 gc2" "gc3 gc4" "gc5 gc5"
+		.gc1
+			.img
+				background: url(../img/first_section/390/organs.jpg) no-repeat center
+		.gc2
+			.img
+				background: url(../img/first_section/300/disorders.jpg) no-repeat center
+		.gc3
+			.img
+				background: url(../img/first_section/300/therapy.jpg) no-repeat center
+		.gc5
+			.img
+				background: url(../img/first_section/660/zog.jpg) no-repeat center
+
+	figure.effect-chico
+		h3
+			padding: 3% 0 15px 0
 
 	.header_search__filed
 		top: 3.6em
@@ -143,29 +170,28 @@
 		top: 3.6em
 
 	.grid-chico
+		.gc1
+			.img
+				background: url(../img/first_section/300/organs.jpg) no-repeat center
+		.gc2
+			.img
+				background: url(../img/first_section/390/disorders.jpg) no-repeat center
+		.gc3
+			.img
+				background: url(../img/first_section/390/therapy.jpg) no-repeat center
 		figure
 			p
 				font-size: 50.5%
 			h3
-				font-size: 90%
+				font-size: 85%
 @media only screen and (max-width : 480px)
 
-	.grid-chico
-		grid-template-columns: 1fr
-		grid-template-rows: repeat(6, 200px)
-		grid-gap: 2px
-		grid-template-areas: "gc1" "gc2" "gc3" "gc4" "gc5" "gc6"
 	figure.effect-chico
-			h3
-				margin: -30px 0 0 0
-				padding: 0
-			figcaption::before
-				top: 5px;
-				right: 5px;
-				bottom: 5px;
-				left: 5px;
-
-
+		figcaption::before
+			top: 5px;
+			right: 5px;
+			bottom: 5px;
+			left: 5px;
 
 	.header
 		&_search
@@ -179,6 +205,26 @@
 
 	.header_search__filed
 		top: 3.2em
+
+@media only screen and (max-width : 390px)
+	.grid-chico
+		grid-template-columns: repeat(1, 1fr)
+		grid-template-rows: repeat(5, 100px)
+		grid-template-areas: "gc1" "gc2" "gc3" "gc4" "gc5"
+		.gc1
+			.img
+				background: url(../img/first_section/1fr/organs.jpg) no-repeat center
+		.gc2
+			.img
+				background: url(../img/first_section/1fr/disorders.jpg) no-repeat center
+		.gc3
+			.img
+				background: url(../img/first_section/1fr/therapy.jpg) no-repeat center
+	figure.effect-chico
+		h3
+			padding: 3% 0 5px 0
+			margin: -35px 0 0 0
+			// padding: 0
 @media only screen and (max-width : 350px)
 	.header_search__filed
 		top: 2.8em
@@ -214,8 +260,6 @@
 		top: 3.4em
 
 @media only screen and (max-width : 285px)
-
-
 	.header
 		&-logo_link
 			&__med,&__info
