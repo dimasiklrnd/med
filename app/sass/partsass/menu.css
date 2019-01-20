@@ -3,7 +3,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	max-width: fit-content;
+	/* max-width: fit-content; */
 	margin: 0 auto;
 	height: 48px;
 	padding: 0;
@@ -50,9 +50,8 @@
 	/* flex-direction: row;*/
 	flex-wrap: wrap;
 	z-index: 20;
-	position: absolute
-
-  /* justify-content: center; */
+	position: absolute;
+  justify-content: center;
 	/* max-height: 500px;
 	flex-wrap: wrap; */
 	}
