@@ -17,7 +17,7 @@ var gulp          = require('gulp'),
 		smartgrid     = require('smart-grid'),
 		htmlmin       = require('gulp-htmlmin'),
 		htmlclean     = require('gulp-htmlclean'),
-
+		sourcemaps    = require('gulp-sourcemaps'),
 
 /* It's principal settings in smart grid project */
 		settings      = {
@@ -69,7 +69,7 @@ gulp.task('browser-sync', function() {
 		notify: false,
 		open: false, //открытие браузера при запуске
 		// online: false, // Work Offline Without Internet Connection
-		// tunnel: true, tunnel: "medinfo", // Demonstration page: http://medinfo.localtunnel.me
+		 //tunnel: true, tunnel: "medinfo", // Demonstration page: http://medinfo.localtunnel.me
 	})
 });
 
@@ -84,10 +84,12 @@ gulp.task('assemblyhtml', function() {
 gulp.task('styles', function() {
 	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
 	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
-	.pipe(rename({ suffix: '.min', prefix : '' }))
-	.pipe(autoprefixer({ /*grid:true, */browsers: ['>0.1%', 'last 2 versions'], cascade: false }))  //было last 15 versions
-	.pipe(cleancss( { level: 2 } ))/*{ 1: { specialComments: 0 }, 2: { all: true, mergeSemantically: false, removeUnusedAtRules: false, restructureRules: false } } }), ({ compatibility: 'ie9' }))*/ // был левел 1
-	.pipe(gulp.dest('app/css'))
+		.pipe(rename({ suffix: '.min', prefix: '' }))
+		/*.pipe(sourcemaps.init())*/
+		.pipe(autoprefixer({ /*grid: true,  /*browsers: ['>0.1%', 'last 2 versions'],*/grid: "autoplace", cascade: false }))  //было last 15 versions
+	.pipe(cleancss( { level: 2 } ))/*{ 1: { specialComments: 0 }, 2: { all: true, mergeSemantically: false, removeUnusedAtRules: false, restructureRules: false } } }), ({ compatibility: 'ie10' }))*/ // был левел 1
+	/*.pipe(sourcemaps.write('.'))*/
+		.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.stream())
 });
 
