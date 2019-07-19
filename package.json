@@ -31,6 +31,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
+    "postcss-grid-kiss": "^2.1.4",
     "smart-grid": "^2.1.2"
   },
   "dependencies": {}

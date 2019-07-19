@@ -73,7 +73,7 @@ gulp.task('browser-sync', function() {
 	})
 });
 
-// *******************************************************************************************
+// *********************************************************************************************
 gulp.task('assemblyhtml', function() {
   return gulp.src(['app/part_html/head/*.html', 'app/part_html/*.html', 'app/part_html/end/*.html'])
     .pipe(concat('index.html'))
