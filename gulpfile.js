@@ -89,7 +89,7 @@ gulp.task('styles', function() {
 	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
 		.pipe(rename({ suffix: '.min', prefix: '' }))
 		/*.pipe(sourcemaps.init())*/
-		.pipe(autoprefixer({ /*grid: true,  */overrideBrowserslist: ['>0.1%', 'ie >= 10','last 5 versions'],grid: "autoplace", cascade: false }))  //было last 15 versions
+		.pipe(autoprefixer({ /*grid: true,  */overrideBrowserslist: ['>0.1%', 'ie >= 10','last 5 versions', 'iOS 7'],grid: "autoplace", cascade: false }))  //было last 15 versions
 	.pipe(cleancss( { level: 2 } ))/*{ 1: { specialComments: 0 }, 2: { all: true, mergeSemantically: false, removeUnusedAtRules: false, restructureRules: false } } }), ({ compatibility: 'ie10' }))*/ // был левел 1
 	/*.pipe(sourcemaps.write('.'))*/
 		.pipe(gulp.dest('app/css'))
